@@ -1,6 +1,8 @@
 <?php
 
+use App\Enums\SignatureStatus;
 use App\Http\Controllers\ProfileController;
+use App\Models\Plan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,3 +31,23 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/test', function(){
+    // $plan = Plan::create([
+    //     'name' => 'Firs Plan',
+    //     'short_description' => 'A simple plan',
+    //     'price' => 2990
+    // ]);
+
+    // $client = Auth::user()->client()->create([
+    //     'document' => '02907039130',
+    //     'birthdate' => '1992-07-20'
+    // ]);
+
+    // $client->signatures()->create([
+    //     'plan_id' => $plan->id,
+    //     'status' => SignatureStatus::SUSPENDED
+    // ]);
+    // return 'hey';
+    return view('test');
+});
