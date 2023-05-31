@@ -10,7 +10,7 @@
     <ol>
         <li>Nome: {{ auth()->user()->name }}</li>
         <li>Documento: {{ auth()->user()->client->document }}</li>
-        <li>Status da assinatura: {{ auth()->user()->client->signatures->first()->status }}</li>
+        <li>Status da assinatura: {{ auth()->user()->client->signatures->first()->status->name }}</li>
     </ol>
 </body>
 </html>

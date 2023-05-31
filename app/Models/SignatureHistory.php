@@ -19,7 +19,7 @@ class SignatureHistory extends Model
         'last_status'
     ];
 
-    protected $cast = [
+    protected $casts = [
         'last_status' => SignatureStatus::class
     ];
 
